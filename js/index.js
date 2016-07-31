@@ -7,18 +7,19 @@ var script = document.createElement('script');
 
 window.onload = function(){
 
-
-  console.log(counter(1));
-  console.log(counter());
-  console.log(counter());
+  setInterval(' console.log(counter(1)); console.log(counter()) ', 4000)
 
 
   console.log( first.foo2(33)  );    
   console.log( first.x  );    
 
+
   app.init = { param1: 123, param2: "Terminator" } ;
   console.log( app.monitor() );
 
-
+  console.log( app.createTerminator('Spiritual-1') );
+  console.log( app.createTerminator('Spiritual-2') );
+  console.log( app.createTerminator('Spiritual-3') );
+  console.log( app.createTerminator('Spiritual-4') );
 
 }

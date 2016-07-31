@@ -17,9 +17,20 @@ var first = {
 	foo2: function(x){  return x*2}
 }
 
+
 // app
 var app = {
 
 	init: {},
-	monitor: function(){ return this.init }
+
+	monitor: function(){ return this.init },
+
+	createTerminator: (function(x){ 
+		var terminators = [];
+		return function(x) {
+			terminators.push(x);
+			return terminators
+		}
+	}())
+	
 }
