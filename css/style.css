@@ -1,0 +1,30 @@
+body {
+  background: #111;
+  color: white;
+  text-align: center;
+  font-family: Roboto, Arial;
+}
+
+main {
+  margin: auto;
+  max-width: 60em;
+}
+
+.str {
+  /*float: left; */
+  display: inline-block;
+  /*height: 30px; */
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.tab {
+  border: 1px solid gray;
+  height: 30px;
+  width: 40px;
+  padding-top: 10px;
+}
+.tab:hover {
+  background: gray;
+  color: black;
+}
